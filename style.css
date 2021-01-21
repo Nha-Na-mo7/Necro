@@ -1,0 +1,353 @@
+/* body{
+  margin: 0 auto;
+  padding: 150px;
+  width: 25%;
+  background: #444;
+  color: white;
+} */
+
+@font-face {
+  font-family: 'undertale';
+  src: url('./font/JF-Dot-Shinonome14.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'papyrus';
+  src: url('./font/TanukiMagic.ttf') format('truetype');
+}
+
+#gameArea{
+  border: solid 2px #752575;
+  border-radius: 2px;
+  margin: 0 auto;
+  height: 480px;
+  width: 70%;
+  padding: 20px;
+  font-family: 'papyrus';
+}
+.gA-b-normal{
+  background: #222;
+}
+.gA-c-normal{
+  color: white;
+}
+
+
+#messageArea{
+  border-radius: 10px;
+  border: double 4px #f4f4f4;
+  padding: 10px;
+  margin: 12px auto;
+  min-height: 350px;
+  width: 80%;
+  background: #222;
+  box-sizing: border-box;
+}
+#messageArea > p {
+  color : #f4f4f4;
+  margin: 0;
+  letter-spacing: .15rem;
+  line-height: 37px;
+  font-size: 1.7rem;
+  font-family: 'undertale';
+}
+.opmessage-area{
+  color : #f4f4f4;
+  margin: 0;
+  margin-left: 25px;
+  padding: 0;
+  letter-spacing: .2rem;
+  line-height: 40px;
+  font-size: 1.7rem;
+  font-family: 'undertale';
+  min-height: 140px;
+}
+
+.mA-c-normal{
+  color: #040404;
+}
+.itemMessage{
+  display: inline-block;
+  color : #f4f4f4;
+  margin: 0;
+  letter-spacing: .1rem;
+  line-height: 25px;
+  font-size: 1rem;
+  font-family: 'undertale';
+}
+.itemMessageNg{
+  display: inline;
+  color: #888;
+}
+.itemList{
+  list-style: none;
+  padding-left: 15px;
+}
+
+.center{
+  text-align: center;
+}
+
+.title-logo {
+  color: #f30000;
+  font-size: 38px;
+  text-align: center;
+  filter: drop-shadow(3px 5px 8px rgba(180,0,0,0.8));
+  letter-spacing: 1.5px;
+  margin: 10px;
+}
+.title-logo::selection {
+  background: #da0303;
+  color: #020202;
+}
+.title-logo::-moz-selection {
+  background: #da0303;
+  color: #020202;
+}
+h1 {
+  color: #f30000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+h2 {
+  color: #f4f4f4;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+form{
+  overflow: hidden;
+}
+form.title{
+  overflow: hidden;
+  text-align: center;
+}
+input[type="text"]{
+  text-align: center;
+  color: #545454;
+  height: 60px;
+  width: 60%;
+  padding: 5px 10px;
+  font-size: 32px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+input[type="submit"]{
+  border: solid 3px #ffaa2b;
+  font-size: 30px;
+  transform: scale(0.8, 1);
+  letter-spacing: 3px;
+  padding: 15px 35px;
+  margin: 10px;
+  min-width: 230px;
+  background: rgba(0,0,0,0.1);
+  color: white;
+  /* float: left; */
+  font-family: 'papyrus';
+  /*
+  transform   : scale(1.2, 1); */
+}
+input[type="submit"].title{
+  float: none;
+}
+input[type="submit"].submit-item{
+  border: solid 1px #e4e42c;
+  background: rgba(240,120,255,0.2);
+  border-radius: 2px;
+  color: white;
+  float: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  padding: 10px 5px;
+  margin: 2px;
+  margin-right: 8px;
+  min-width: 220px;
+  font-family: 'undertale';
+  transform   : scale(1, 1);
+}
+input[type="submit"]:hover{
+  border: solid 3px #e4cd25;
+  background: #b3ad5b;
+  cursor: pointer;
+  /* font-family: 'undertale';
+  letter-spacing: 1.5px;
+  transform   : scale(1.2, 1); */
+}
+input[type="submit"].submit-item:hover{
+  border: solid 1px #e4cd25;
+  background: #b3ad5b;
+  cursor: pointer;
+  /* font-family: 'undertale';
+  letter-spacing: 1.5px;*/
+  transform   : scale(1, 1);
+}
+input[type="submit"]:disabled{
+  border-color: #355fa5;
+  background: rgba(111,111,111,1);
+  cursor: not-allowed;
+  opacity: .3;
+  /* font-family: 'undertale';
+  letter-spacing: 1.5px;
+  transform   : scale(1.2, 1); */
+}
+.submitNG{
+  background: rgba(200,200,210,0.2);
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #ccc;
+  display: inline-block;
+  float: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  padding: 10px 5px;
+  margin: 2px;
+  margin-right: 8px;
+  width: 220px;
+  text-align: center;
+
+  font-family: 'undertale';
+  /* transform   : scale(1.2, 1); */
+}
+
+a{
+  color: #545454;
+  display: block;
+}
+a:hover{
+  text-decoration: none;
+}
+
+span.message-red{
+  color: #f30000;
+  font-size: 34px;
+  letter-spacing: 1.5px;
+  font-family: 'papyrus';
+}
+span.op-red{
+  color: #f30000;
+  letter-spacing: 1.5px;
+  font-family: 'undertale';
+  font-weight: bold;
+}
+p.theend{
+  top: 190px;
+  position: relative;
+  font-family: 'undertale';
+  font-size: 60px;
+}
+
+
+
+/* ==================
+画像
+================== */
+.img-Enemy{
+  height: 120px;
+  width: 20%;
+  margin: 0 auto;
+}
+.titleLogo{
+  margin: 0 auto;
+  top: 180px;
+  position: relative;
+  width: 80%;
+}
+.relative{
+  position: relative;
+}
+.big-picture{
+  border-radius: 5px;
+  top : 30%;
+  padding: 10px;
+  margin: auto 0;
+  max-height: 480px;
+  position: relative;
+}
+.big-picture-op3{
+  border-radius: 5px;
+  top : 30%;
+  padding: 10px;
+  margin: auto 0;
+  max-height: 480px;
+  min-height: 345px;
+  max-width: 635px;
+  position: relative;
+}
+.big-picture-background{
+  border-radius: 5px;
+  margin: auto 0;
+  left: 0;
+  max-height: 480px;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+}
+.enemy-monster{
+  top : 40px;
+  padding: 10px;
+  margin: auto 0;
+  max-height: 350px;
+  position: relative;
+  display: inline-block;
+}
+.protectShield{
+  top : 40px;
+  margin: auto 0;
+  height: 406px;
+  width: 100%;
+  opacity: 0.8;
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+.js-minamogiri{
+  top : -50px;
+  left: -60px;
+  opacity: 0.9;
+  position: absolute;
+}
+/* ===========
+ライフバー
+=========== */
+.hp-bar{
+  border-radius: 1px;
+  border: 1px solid;
+  background: #020202;
+  width : 500px;
+  height: 28px;
+  margin: 0 auto;
+  margin-top: 45px;
+  position: relative;
+}
+.lifebar{
+  border-radius: inherit;
+  padding: 0;
+  position: absolute;
+  height: inherit;
+  left: 0;
+}
+
+.myself-status{
+  background: #222;
+  box-sizing: border-box;
+  border: solid;
+  border-radius: 8px;
+  list-style: none;
+  font-size: 24px;
+  padding: 24px 10px;
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 180px;
+}
+.myself-status > li{
+  margin-bottom: 8px;
+}
+.myself-status-name{
+  font-size: 28px;
+}
