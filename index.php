@@ -221,7 +221,6 @@ if(!empty($_POST)){
         <div class="center">
           <?php if(!empty($passwordFlg)){ ?>
             <form method="post" class="password">
-              <input type="text" name="password" placeholder="パスワード" class="js-passcheck" autocomplete="off">
               <input type="submit" name="restart" value="始める" class="js-pass-disable">
             </form>
 

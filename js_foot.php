@@ -43,34 +43,7 @@
         }
       }
     })();
-    
-    // パスワードチェック(非活性→活性)
-    var passchecker = (function(){
-      var PASSWORD = '1234';
-      return{
-        validPass: function($that){
-          var password = $that.val();
-          // パスワードが合致した時のみ活性化させる
-          if(password === PASSWORD){
-            console.log('パスワードが一致');
-            $that.prop('disabled', true);
-            $('.js-pass-disable').prop('disabled', false);
-          }else{
-            $that.prop('disabled', false);
-          }
-        },
-        init: function(){
-          var that = this;
-          $('.js-passcheck').on('keyup', function(){
-            var $that = $(this);
-            // console.log($that.val());
-            that.validPass($that);
-          });
-        }
-      }
-    })();
     battleEffect.init();
-    passchecker.init();
   })
 
 </script>

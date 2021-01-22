@@ -22,6 +22,4 @@ if(!empty($_POST['back'])){
   }
 
 }
-
-
  ?>
