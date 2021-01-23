@@ -218,6 +218,7 @@ if(!empty($_POST)){
        ?>
         <div class="center">
           <?php if(!empty($passwordFlg)){ ?>
+            <img src="img/office/titleLogo.png" alt="" class="titleLogo">
             <form method="post" class="password">
               <input type="submit" name="restart" value="始める" class="js-pass-disable">
             </form>
@@ -228,7 +229,7 @@ if(!empty($_POST)){
             <?php $_SESSION['standbyTime'] = false; ?>
           </div>
           <form method="post" class="title">
-            <input type="submit" name="start" value="はじめる" class="title">
+            <input type="submit" name="start" value="GAME START" class="title">
           </form>
           <?php } ?>
 
