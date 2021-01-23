@@ -97,8 +97,6 @@ if(!empty($_POST)){
       stageStart(1);
     // startFlgがない（リセットではない）とき
     }else{
-      // stageStart($_SESSION['stageNum']);
-
       // 次のチャプターに移行するとき(フェーズは変わらない)
       if($nextChapterSameFlg){
         nextChapterLink();
