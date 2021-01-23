@@ -241,6 +241,7 @@ if(!empty($_POST)){
             if(!empty($passwordFlg)){
               ?>
               <div class="center">
+                <img src="img/office/titleLogo.png" alt="" class="titleLogo">
                 <form method="post" class="password">
                   <input type="submit" name="restart" value="始める" class="js-pass-disable">
                 </form>
