@@ -166,16 +166,6 @@ if(!empty($_POST)){
         Battle::createMonster();
       }
     }
-    // else{
-    //   // HPが0以下のモンスターしかいない時は待機
-    //   if(($_SESSION['monster']->getHpM()) <= 0){
-    //     $_SESSION['monster'] = array();
-    //     debug('HP0以下');
-    //   // HPが残っている場合
-    //   }else{
-    //     debug('HP残りあり');
-    //   }
-    // }
   }
 // POST送信がないとき (=最初の画面)
 }else{
