@@ -201,8 +201,8 @@ if(!empty($_POST)){
      ?>
     <!-- 上画面 -->
     <div id="gameArea" class="gA-b-normal gA-c-normal">
-      <?php debug('セッション有無の判定'); ?>
       <?php
+        debug('セッション有無の判定');
         // セッションがない時
         if(empty($_SESSION)){
        ?>
